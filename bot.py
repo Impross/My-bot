@@ -21,11 +21,11 @@ def run_flask():
 def reply_message(message):
     text = message.text.lower()
     if "မင်္ဂလာပါ" in text:
-        bot.reply_to(message, "မင်္ဂလာပါခင်ဗျာ။ Render ပေါ်ကနေ ၂၄ နာရီ စာပြန်ပေးနေပါတယ်!")
+        bot.reply_to(message, "မင်္ဂလာပါခင်ဗျာ။၂၄ နာရီ စာပြန်ပေးနေပါတယ်!")
     elif "နေကောင်းလား" in text:
         bot.reply_to(message, "နေကောင်းပါတယ်ခင်ဗျ။ လူကြီးမင်းရော?")
     else:
-        bot.reply_to(message, "ကျွန်တော်က Render ပေါ်မှာ ၂၄ နာရီ ရှိနေမယ့် Bot လေးပါ။")
+        bot.reply_to(message, "ကျွန်တော်က၂၄ နာရီ ရှိနေမယ့် Bot လေးပါ။")
 
 if __name__ == "__main__":
     t = threading.Thread(target=run_flask)
